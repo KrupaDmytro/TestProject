@@ -15,6 +15,9 @@ public class Test {
 
         BigDecimal x = myFunc(n-1).add(myFunc(n-2)).add(myFunc(n-3)).add(myFunc(n-4)).add(myFunc(n-5)).add(myFunc(n-6));
 
+
+        if(n <= 6) x = x.add(BigDecimal.ONE);
+
         set.put(n , x);
 
         return x;
